@@ -2,7 +2,7 @@
 #include <DHT_U.h>
 #include <SoftwareSerial.h>
 
-//變數名稱 自由更改
+//var name can change
 #define DHTPIN 7
 #define DHTTYPE DHT11
 
