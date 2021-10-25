@@ -2,6 +2,7 @@
 #include <DHT_U.h>
 #include <SoftwareSerial.h>
 
+//變數名稱 自由更改
 #define DHTPIN 7
 #define DHTTYPE DHT11
 
@@ -17,12 +18,17 @@ void loop() {
   if (!Serial.available())   {
     float h = dht.readHumidity(),
           t = dht.readTemperature();
+    
+    
+    //function A's String type can change
           
     BTSerial.print("h: ");
     BTSerial.println(h);
 
     BTSerial.print("t: ");
     BTSerial.println(t);
+    
+    //delay's time value can change
     delay(1000);
   }
   
