@@ -1,3 +1,5 @@
+//BT setting C++ code
+
 #include<SoftwareSerial.h>
 
 SoftwareSerial BTSerial(10, 11);
